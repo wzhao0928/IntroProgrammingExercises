@@ -18,24 +18,52 @@ public class PrimeFactors {
 
     private ArrayList<Integer> primes = new ArrayList<Integer>();
 
-    private int genNextPrime() {
-        if (primes.isEmpty()) {
-            primes.add(2);
-            return 2;
+    public static void main(String[] args) {
+        PrimeFactors primeFactors = new PrimeFactors();
+        int given = Utils.getInputInt();
+
+        List<Integer> primeFactorsList = primeFactors.generator(given);
+        String output = "";
+
+        for (Integer i : primeFactorsList) {
+            output += i + ",";
         }
-        for (int i = primes.get(primes.size() - 1); ; i++) {
-            boolean isPrime = true;
-            for (Integer prime : primes) {
-                if (i % prime == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
-            if (isPrime) {
-                primes.add(i);
-                return i;
+        if (!output.equals(""))
+            output = output.substring(0, output.length() - 1);
+        System.out.println(output);
+    }
+
+    private List<Integer> generator(int given) {
+        List<Integer> result = new ArrayList<Integer>();
+        result.addAll(generator(given, 1));
+        return result;
+    }
+
+    private List<Integer> generator(int given, int lastPrimeFactor) {
+        List<Integer> result = new ArrayList<Integer>();
+
+        if (given > 1) {
+            int nextPrimeFactor;
+            int lastPrime = lastPrimeFactor;
+
+            nextPrimeFactor = findNextPrimeFactor(given, lastPrime);
+            if (nextPrimeFactor <= given) {
+                result.add(nextPrimeFactor);
+                given = divideOutAPrimeFactor(given, nextPrimeFactor);
+                result.addAll(generator(given, nextPrimeFactor));
             }
         }
+
+        return result;
+    }
+
+    private int findNextPrimeFactor(int given, int lastPrime) {
+        int nextPrime;
+        while ((nextPrime = findNextPrimeOf(lastPrime)) < given &&
+                given % nextPrime != 0) {
+            lastPrime = nextPrime;
+        }
+        return nextPrime;
     }
 
     private int findNextPrimeOf(int given) {
@@ -52,47 +80,30 @@ public class PrimeFactors {
         return nextPrime;
     }
 
-    private List<Integer> generator(int given) {
-        List<Integer> result = new ArrayList<Integer>();
-        result.addAll(generator(given, 1));
-        return result;
+    private int genNextPrime() {
+        if (primes.isEmpty()) {
+            primes.add(2);
+            return 2;
+        }
+        for (int i = primes.get(primes.size() - 1); ; i++) {
+            if (isPrime(i)) return i;
+        }
     }
 
-    private List<Integer> generator(int given, int lastPrimeFactor) {
-        List<Integer> result = new ArrayList<Integer>();
-
-        if (given > 1) {
-            int nextPrime;
-            int lastPrime = lastPrimeFactor;
-
-            while ((nextPrime = findNextPrimeOf(lastPrime)) < given &&
-                    given % nextPrime != 0) {
-                lastPrime = nextPrime;
-            }
-            if (nextPrime <= given) {
-                result.add(nextPrime);
-                do {
-                    given /= nextPrime;
-                } while (given % nextPrime == 0);
-                result.addAll(generator(given, nextPrime));
-            }
-        }
-
-        return result;
+    private int divideOutAPrimeFactor(int given, int primeFactor) {
+        do {
+            given /= primeFactor;
+        } while (given % primeFactor == 0);
+        return given;
     }
 
-    public static void main(String[] args) {
-        PrimeFactors primeFactors = new PrimeFactors();
-        int given = Utils.getInputInt();
-
-        List<Integer> primeFactorsList = primeFactors.generator(given);
-        String output = "";
-
-        for (Integer i : primeFactorsList) {
-            output += i + ",";
+    private boolean isPrime(int i) {
+        for (Integer prime : primes) {
+            if (i % prime == 0) {
+                return false;
+            }
         }
-        if (!output.equals(""))
-            output = output.substring(0, output.length() - 1);
-        System.out.println(output);
+        primes.add(i);
+        return true;
     }
 }

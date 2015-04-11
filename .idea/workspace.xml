@@ -92,13 +92,20 @@
       <file leaf-file-name="PrimeFactors.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/exercises/primefactors/PrimeFactors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5450237" vertical-offset="910" max-vertical-offset="1560">
-              <caret line="76" column="56" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.8886256" vertical-offset="0" max-vertical-offset="465">
+              <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#620#629#0" expanded="true" />
-                <element signature="e#1616#1625#0" expanded="true" />
-                <element signature="e#1817#1826#0" expanded="true" />
+                <element signature="docComment;class#PrimeFactors#0" expanded="false" />
+                <element signature="method#main#0;class#PrimeFactors#0" expanded="false" />
+                <element signature="method#genNextPrime#0;class#PrimeFactors#0" expanded="false" />
+                <element signature="method#isPrime#0;class#PrimeFactors#0" expanded="false" />
+                <element signature="method#findNextPrimeOf#0;class#PrimeFactors#0" expanded="false" />
+                <element signature="method#generator#0;class#PrimeFactors#0" expanded="false" />
+                <element signature="e#2026#2035#0" expanded="true" />
+                <element signature="method#generator#1;class#PrimeFactors#0" expanded="false" />
+                <element signature="e#2227#2236#0" expanded="true" />
+                <element signature="method#divideOutAPrimeFactor#0;class#PrimeFactors#0" expanded="false" />
+                <element signature="method#findNextPrimeFactor#0;class#PrimeFactors#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -340,6 +347,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.PrimeFactors">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -828,12 +836,12 @@
       <created>1428654349372</created>
       <option name="number" value="Default" />
       <updated>1428654349372</updated>
-      <workItem from="1428654357804" duration="17747000" />
+      <workItem from="1428654357804" duration="19892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17747000" />
+    <option name="totallyTimeSpent" value="19892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="809" extended-state="6" />
@@ -843,7 +851,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -852,7 +860,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -860,7 +868,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -920,10 +928,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10380">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1428719738000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1428719738000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1428719738000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1428719738000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1428722663000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1428722663000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1428722663000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1428722663000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1024,13 +1032,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/exercises/primefactors/PrimeFactors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5450237" vertical-offset="910" max-vertical-offset="1560">
-          <caret line="76" column="56" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.8886256" vertical-offset="0" max-vertical-offset="465">
+          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#620#629#0" expanded="true" />
-            <element signature="e#1616#1625#0" expanded="true" />
-            <element signature="e#1817#1826#0" expanded="true" />
+            <element signature="docComment;class#PrimeFactors#0" expanded="false" />
+            <element signature="method#main#0;class#PrimeFactors#0" expanded="false" />
+            <element signature="method#genNextPrime#0;class#PrimeFactors#0" expanded="false" />
+            <element signature="method#isPrime#0;class#PrimeFactors#0" expanded="false" />
+            <element signature="method#findNextPrimeOf#0;class#PrimeFactors#0" expanded="false" />
+            <element signature="method#generator#0;class#PrimeFactors#0" expanded="false" />
+            <element signature="e#2026#2035#0" expanded="true" />
+            <element signature="method#generator#1;class#PrimeFactors#0" expanded="false" />
+            <element signature="e#2227#2236#0" expanded="true" />
+            <element signature="method#divideOutAPrimeFactor#0;class#PrimeFactors#0" expanded="false" />
+            <element signature="method#findNextPrimeFactor#0;class#PrimeFactors#0" expanded="false" />
           </folding>
         </state>
       </provider>
