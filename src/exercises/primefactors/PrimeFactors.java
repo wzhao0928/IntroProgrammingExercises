@@ -44,9 +44,8 @@ public class PrimeFactors {
 
         if (given > 1) {
             int nextPrimeFactor;
-            int lastPrime = lastPrimeFactor;
 
-            nextPrimeFactor = findNextPrimeFactor(given, lastPrime);
+            nextPrimeFactor = findNextPrimeFactor(given, lastPrimeFactor);
             if (nextPrimeFactor <= given) {
                 result.add(nextPrimeFactor);
                 given = divideOutAPrimeFactor(given, nextPrimeFactor);
@@ -59,9 +58,10 @@ public class PrimeFactors {
 
     private int findNextPrimeFactor(int given, int lastPrime) {
         int nextPrime;
-        while ((nextPrime = findNextPrimeOf(lastPrime)) < given &&
+        int i = lastPrime;
+        while ((nextPrime = findNextPrimeOf(i)) < given &&
                 given % nextPrime != 0) {
-            lastPrime = nextPrime;
+            i = nextPrime;
         }
         return nextPrime;
     }
